@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledger - TypeScript Task Manager</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Ledger</h1>
+      <p class="sub">A task manager, written in TypeScript. Ten tasks inside: one per core topic.</p>
+    </div>
+    <button class="link" id="theme">Theme</button>
+  </header>
+  <div class="stats">
+    <div><b id="sTotal">0</b>total</div>
+    <div><b id="sOpen">0</b>open</div>
+    <div><b id="sDone">0</b>done</div>
+  </div>
+  <div class="bar"><i id="bar"></i></div>
+
+  <div class="add">
+    <input class="title" id="fTitle" placeholder="What needs doing?" maxlength="90">
+    <input id="fTag" placeholder="Tag (e.g. study)" maxlength="16">
+    <select id="fPri"><option value="1">Low</option><option value="2" selected>Medium</option><option value="3">High</option></select>
+    <input id="fNote" placeholder="Short note" maxlength="120">
+    <button id="fAdd">Add</button>
+  </div>
+
+  <div class="tools" id="tools">
+    <button data-f="all" class="on">All</button>
+    <button data-f="todo">Open</button>
+    <button data-f="done">Done</button>
+    <input id="q" placeholder="Search...">
+  </div>
+  <ul id="list"></ul>
+  <footer>Saved in your browser. <button class="link" id="reset">Reset to the 10 starter tasks</button></footer>
+</div>
+<script src="dist/main.js"></script>
+</body>
+</html>

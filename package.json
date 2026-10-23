@@ -1,0 +1,12 @@
+{
+  "name": "ledger-task-manager",
+  "version": "1.0.0",
+  "description": "Task manager built with TypeScript, HTML and CSS",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
